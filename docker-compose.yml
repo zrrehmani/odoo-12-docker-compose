@@ -23,7 +23,7 @@ services:
     command: --
 #    command: odoo scaffold /mnt/extra-addons/test_module
     environment:
-      - HOST=db
+      - HOST=localhost
       - USER=odoo
       - PASSWORD=odoo
     volumes:
