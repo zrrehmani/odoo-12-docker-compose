@@ -15,7 +15,7 @@ services:
     image: odoo:12
     user: root
     depends_on:
-      - db
+      - 127.0.0.1
     ports:
       - "10012:8069"
       - "20012:8072" # live chat
@@ -23,7 +23,7 @@ services:
     command: --
 #    command: odoo scaffold /mnt/extra-addons/test_module
     environment:
-      - HOST=localhost
+      - HOST=127.0.0.1
       - USER=odoo
       - PASSWORD=odoo
     volumes:
